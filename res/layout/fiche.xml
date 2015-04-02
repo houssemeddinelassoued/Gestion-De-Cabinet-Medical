@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/med"  >
+
+    <TextView
+        android:id="@+id/textNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nom"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/textNom"
+        android:hint="@string/nom_hint"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom"
+        android:gravity="left"
+        android:text="@string/prenom"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/nom"
+        android:layout_toRightOf="@id/textPrenom"
+        android:hint="@string/prenom_hint"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenom"
+        android:gravity="left"
+        android:text="@string/phone"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/prenom"
+        android:layout_toRightOf="@id/textTelephone"
+        android:hint="@string/phone_hint"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textDateDeNaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telephone"
+        android:gravity="left"
+        android:text="@string/birth"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <DatePicker
+        android:id="@+id/DateDeNaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDateDeNaissance"
+        android:layout_centerHorizontal="true"
+        android:endYear="2032"
+        android:startYear="1930" />
+
+    <RadioGroup
+        android:id="@+id/Sexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DateDeNaissance"
+        android:checkedButton="@+id/radio2"
+        android:orientation="horizontal" >
+        
+
+        <RadioButton
+            android:id="@+id/homme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homme" 
+        android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/femme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/femme" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Observation"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/Sexe"
+        android:hint="@string/onsveration_hint" />
+
+    <Button
+        android:id="@+id/Enregistre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Observation"
+        android:text="@string/save"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+</RelativeLayout>

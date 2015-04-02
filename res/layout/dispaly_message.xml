@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:background="@drawable/medical"
+       >
+
+    <Button
+        android:id="@+id/msg"
+        android:layout_width="fill_parent"
+        android:layout_height="75px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="59dp"
+        android:text="@string/msg"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/msg"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/msg_hint" />
+    
+
+    <EditText
+        android:id="@+id/nouv_obs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/modifier"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="@string/onsveration_hint"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/modifier"
+        android:layout_width="fill_parent"
+        android:layout_height="75px"
+        android:layout_above="@+id/sms"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="46dp"
+        android:text="@string/fourth"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/info"
+        android:textColor="#FF0000"
+        android:textSize="20px"
+        android:textStyle="bold" />
+
+</RelativeLayout>

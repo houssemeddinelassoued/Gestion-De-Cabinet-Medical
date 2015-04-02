@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">cabinet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nom">Nom :</string>
+    <string name="prenom">Prénom :</string>
+    <string name="nom_hint">Nom</string>
+    <string name="prenom_hint">Prénom </string>
+    <string name="phone">Téléphone :</string>
+    <string name="phone_hint">Téléphone :</string>
+    <string name="birth">Date de naissance :</string>
+    <string name="homme">Homme</string>
+    <string name="femme">Femme</string>
+    <string name="save">Enregistrer</string>
+    <string name="onsveration_hint">Observation</string>
+    <string name="error">Champ Obligatoire !</string>
+    <string name="time">Heure du rendez vous :</string>
+    <string name="date">Date du rendez vous :</string>
+    <string name="first">Ajouter un nouveau patient</string>
+    <string name="second">Voir le calandrier</string>
+    <string name="third">Prendre un rendez vous</string>
+    <string name="fourth">Ajouter une Observation</string>
+   <string name="msg">Envoyer Un SMS</string>
+   <string name="msg_hint">Votre SMS</string>
+   <string name="info">Info :</string>
+
+</resources>
